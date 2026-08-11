@@ -1,3 +1,4 @@
+// Style reminder: Keep the application shell quiet and transparent so the Home page can own the premium liquid-glass composition.
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
