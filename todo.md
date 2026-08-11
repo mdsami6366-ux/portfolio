@@ -5,3 +5,9 @@
 - [x] Tighten the Skills and Projects compositions first, since they are the sections most visibly affected by the current screenshot.
 - [x] Verify no section headings or cards are hidden under the fixed navigation after anchor clicks.
 - [x] Re-run desktop and mobile visual checks, then save a new checkpoint.
+
+## GitHub Export
+
+- [x] Confirm the GitHub owner and repository name: `mdsami6366-ux/portfolio`.
+- [ ] Push the current portfolio checkpoint to GitHub.
+- [ ] Verify the remote repository and default branch.
