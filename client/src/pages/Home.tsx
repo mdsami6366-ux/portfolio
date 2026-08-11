@@ -45,7 +45,12 @@ const skillIcons: Record<SkillCategory, typeof Code2> = {
 type SectionId = (typeof navigation)[number]["id"];
 
 function scrollToId(id: string) {
-  document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+  const section = document.getElementById(id);
+  if (!section) return;
+  const header = document.querySelector<HTMLElement>(".site-header");
+  const headerClearance = (header?.getBoundingClientRect().height ?? 0) + 28;
+  const targetTop = Math.max(0, section.getBoundingClientRect().top + window.scrollY - headerClearance);
+  window.scrollTo({ top: targetTop, behavior: "smooth" });
 }
 
 function GlassArrow({ direction = "up" }: { direction?: "up" | "right" }) {
@@ -156,6 +161,7 @@ export default function Home() {
                 href={`#${item.id}`}
                 className={`nav-link ${activeSection === item.id ? "is-active" : ""}`}
                 aria-current={activeSection === item.id ? "page" : undefined}
+                onClick={(event) => { event.preventDefault(); scrollToId(item.id); }}
               >
                 {item.label}
                 {activeSection === item.id && <span className="nav-dot" aria-hidden="true" />}

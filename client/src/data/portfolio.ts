@@ -9,8 +9,7 @@ export const portfolio = {
   description:
     "I build digital experiences, solve problems with code, and continuously explore modern technologies to create practical solutions.",
   bio: [
-    "I'm a third-year Computer Science Engineering student interested in software development, problem solving, full-stack technologies and AI/ML.",
-    "I enjoy turning ideas into practical projects and continuously improving my technical skills.",
+    "I'm a third-year Computer Science Engineering student exploring software development, full-stack technologies and AI/ML. I turn ideas into practical projects while building stronger technical fundamentals.",
   ],
   profileImage: "/manus-storage/md-sami-portrait-placeholder_4f14d7c0.png",
   resume: "#resume-placeholder",
