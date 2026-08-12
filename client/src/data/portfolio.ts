@@ -11,7 +11,7 @@ export const portfolio = {
   bio: [
     "I'm a third-year Computer Science Engineering student exploring software development, full-stack technologies and AI/ML. I turn ideas into practical projects while building stronger technical fundamentals.",
   ],
-  profileImage: "/manus-storage/md-sami-portrait-placeholder_4f14d7c0.png",
+  profileImage: "/portfolio/profile.jpeg",
   resume: "#resume-placeholder",
   contact: {
     email: "your.email@example.com",
@@ -51,7 +51,14 @@ export const portfolio = {
         "An AI-powered application that recommends outfits based on user preferences, style, occasion and other relevant inputs.",
       status: "CURRENTLY BUILDING",
       image: "/manus-storage/md-sami-project-notes_c7beefbb.png",
-      technologies: ["Python", "Machine Learning", "Flask", "HTML", "CSS", "JavaScript"],
+      technologies: [
+        "Python",
+        "Machine Learning",
+        "Flask",
+        "HTML",
+        "CSS",
+        "JavaScript",
+      ],
       live: "#outfit-placeholder",
       github: "#outfit-github-placeholder",
     },
@@ -70,10 +77,27 @@ export const portfolio = {
     },
   ],
   journey: [
-    { year: "2024", label: "FOUNDATIONS", description: "Programming fundamentals and Computer Science basics." },
-    { year: "2025", label: "BUILDING", description: "DSA, Web Development and practical projects." },
-    { year: "2026", label: "EXPLORING", description: "Full-stack development and AI/ML." },
-    { year: "NOW", label: "NEXT CHAPTER", description: "Preparing for internships, placements and becoming a stronger developer." },
+    {
+      year: "2024",
+      label: "FOUNDATIONS",
+      description: "Programming fundamentals and Computer Science basics.",
+    },
+    {
+      year: "2025",
+      label: "BUILDING",
+      description: "DSA, Web Development and practical projects.",
+    },
+    {
+      year: "2026",
+      label: "EXPLORING",
+      description: "Full-stack development and AI/ML.",
+    },
+    {
+      year: "NOW",
+      label: "NEXT CHAPTER",
+      description:
+        "Preparing for internships, placements and becoming a stronger developer.",
+    },
   ],
 } as const;
 
